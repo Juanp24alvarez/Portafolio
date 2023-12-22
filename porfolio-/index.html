@@ -11,7 +11,7 @@
     <title>JP Desarrollador Web</title>
 </head>
 
-<body>
+<body class="theme-ligth" id="body">
     <!-- SECCION I N I C I O -->
     <section id="inicio">
         <div class="contenido">
@@ -27,6 +27,13 @@
                             <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
                         </ul>
                     </nav>
+                    <div class="col-md-6">
+                        <select name="" id="theme" class="form-select" onchange="themePage()">
+                            <option value="" disabled>Seleccionar Theme</option>
+                            <option value="ligth" >Claro</option>
+                            <option value="dark" >Oscuro</option>
+                        </select>
+                    </div>  
 
                     <!-- Icono del menu responsive -->
                     <div id="icono-nav" onclick="responsiveMenu()">
@@ -57,7 +64,7 @@
             <p class="titulo-seccion">Sobre Mi</p>
             <h2>Hola, Soy <span>Juan Pablo Álvarez</span> </h2>
             <h3>ESTUDIANTE DESARROLLADOR DE SOFTWARE</h3>
-            <p>Actualmente soy estudiante de desarrollo de software. He tenido acercamientos a lenguajes como Python y JavaScript, también he creado algunos proyectos como propios y otros en conjunto.</p>
+            <p >Actualmente soy estudiante de desarrollo de software. He tenido acercamientos a lenguajes como Python y JavaScript, también he creado algunos proyectos como propios y otros en conjunto.</p>
             
         </div>
     </section>
@@ -68,6 +75,7 @@
     <!-- SECCION PORTAFOLIO -->
     <section id="portfolio">
         <h3 class="titulo-seccion">Mis Proyectos</h3>
+        <!-- PARTE 1 -->
         <div class="fila"> 
             <div class="card">
                 <div class="face front">
@@ -111,6 +119,7 @@
                 </div>
             </div>
         </div>
+        <!-- PARTE 2 -->
         <div class="fila">
             <div class="card">
                 <div class="face front">
@@ -134,7 +143,7 @@
                     <h3>Ingreso Instragram</h3>
                     <p>Esta al igual que la página de perfil de Instagram, hice una copia o replica de como podía crear la parte en donde se hace el registo y/o ingreso a Instragram.</p>
                     <div class="link">
-                        <a href="https://juanp24alvarez.github.io/ingreso_inst/Instagram/index.html" target="_blank>Details</a>
+                        <a href="https://juanp24alvarez.github.io/ingreso_inst/Instagram/index.html" target="_blank">Details</a>
                     </div>
                 </div>
             </div>
@@ -152,7 +161,7 @@
                 </div>
             </div>
         </div>
-                <!-- PARTE 3 -->
+        <!-- PARTE 3 -->
         <div class="fila">
             <div class="card">
                 <div class="face front">
@@ -169,27 +178,27 @@
             </div>
             <div class="card">
                 <div class="face front">
-                    <img src="#" alt="">
-                    <h3>Menú KFC</h3>
+                    <img src="./img/R.png" alt="">
+                    <h3>Menú</h3>
                 </div>
                 <div class="face back">
-                    <h3>Menú KFC</h3>
+                    <h3>Menú</h3>
                     <p>En este proyecto se realizó un código con el que se pudiera cambiar entre los temas oscuro y claro, también para que pudiera cambiar entre idiomas, en este caso inglés y español.</p>
                     <div class="link">
-                        <a href="https://juanp24alvarez.github.io/pag_interactiva/P%C3%A1gina%20Interactiva/index.html" target="_blank">Details</a>
+                        <a href="https://juanp24alvarez.github.io/interactiva/pag-interactiva/index.html" target="_blank">Details</a>
                     </div>
                 </div>
             </div>
             <div class="card">
                 <div class="face front">
-                    <img src="#" alt="">
-                    <h3>Pendiente</h3>
+                    <img src="./img/Sr-Pirulo.jpg" alt="">
+                    <h3>Macondo</h3>
                 </div>
                 <div class="face back">
-                    <h3>Pendiente</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, eveniet.</p>
+                    <h3>Macondo</h3>
+                    <p>Este proyecto fue un trabajo puesto en clase, era algo así como crear un juego, en este caso utilicé alertas, para que el jugador vaya leyendo el desarrollo del juego.</p>
                     <div class="link">
-                        <a href="#" target="_blank">Details</a>
+                        <a href="https://juanp24alvarez.github.io/macondo/Macondo/index.html" target="_blank">Details</a>
                     </div>
                 </div>
             </div>
@@ -220,7 +229,7 @@
 
     <!-- SECCION FOOTER -->
     <footer>
-        <p>Todos los derechos reservados - 2022</p>
+        <p>Todos los derechos reservados - 2023</p>
         <div class="redes">
             
             <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
